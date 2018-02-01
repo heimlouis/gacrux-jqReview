@@ -15,9 +15,13 @@ Review of the following:
 git branches:
 
 - git branch: lists existing branches and displays on which one you are
+![git branch](images/git0.png)
 - git checkout: will move from one branch to another existing branch
+![git branch](images/git1.png)
 - git checkout -b BRANCHNAME: will create a new branch
+![git checkout -b](images/git2.png)
 - git merge BRANCHNAMEWITHOTHERCODE: merges in code from another branch
+![git merge](images/git2.png)
 
 basic workflow:
 
@@ -31,4 +35,5 @@ Afternoon lecture:
 ---
 
 - handle dynamically created element clicks
-- get data from dynamically created elements
+- get data from dynamically created elements $( this ).data( DATANAME )
+![this data](images/thisData.png)
