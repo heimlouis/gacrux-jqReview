@@ -24,6 +24,9 @@ $( document ).ready( function(){
   // handle click even on a parent & check if this class was clicked within
   $( '#garageOut' ).on( 'click', '.takeOutButton',function(){
     console.log( 'in takeOutButton on click', $( this ).data( 'id' ) );
+    var carId = $( this ).data( 'id' );
+    console.log( garage.splice( carId, 1 ) );
+    displayGarage();
   }); // end takeOutButton on click
 }); //end doc ready
 

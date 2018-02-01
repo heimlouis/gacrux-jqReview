@@ -37,3 +37,5 @@ Afternoon lecture:
 - handle dynamically created element clicks
 - get data from dynamically created elements $( this ).data( DATANAME )
 ![this data](images/thisData.png)
+- splice out a given car from the garage array
+![this data](images/splice.png)
