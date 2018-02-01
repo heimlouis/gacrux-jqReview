@@ -1,5 +1,5 @@
-console.log( 'js' );
-
 $( document ).ready( function(){
-  console.log( 'JQ' );
+  $( '#clickyButton' ).on( 'click', function(){
+    console.log( 'in clickyButton on click' );
+  }); // end clickyButton on click
 }); //end doc ready
