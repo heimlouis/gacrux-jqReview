@@ -23,7 +23,7 @@ $( document ).ready( function(){
   // this syntax is necessary for most dynaically created items
   // handle click even on a parent & check if this class was clicked within
   $( '#garageOut' ).on( 'click', '.takeOutButton',function(){
-    console.log( 'in takeOutButton on click' );
+    console.log( 'in takeOutButton on click', $( this ).data( 'id' ) );
   }); // end takeOutButton on click
 }); //end doc ready
 
@@ -40,7 +40,7 @@ function displayGarage(){
     outputString += garage[ i ].year + ' ';
     outputString += garage[ i ].make + ' ';
     outputString += garage[ i ].model;
-    outputString += ' <button class="takeOutButton">Take Out</button></li>';
+    outputString += ' <button class="takeOutButton" data-id="' + i + '">Take Out</button></li>';
     output.append( outputString );
   } //end for
 } // end displayGarage

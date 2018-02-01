@@ -26,3 +26,9 @@ basic workflow:
 - add/commit as usual
 - checkout master (git checkout master)
 - merge in changes from feature branch (git merge BRANCHNAME)
+
+Afternoon lecture:
+---
+
+- handle dynamically created element clicks
+- get data from dynamically created elements
