@@ -19,6 +19,12 @@ $( document ).ready( function(){
     $( '#makeIn' ).val( '' );
     $( '#modelIn' ).val( '' );
   }); // end clickyButton on click
+
+  // this syntax is necessary for most dynaically created items
+  // handle click even on a parent & check if this class was clicked within
+  $( '#garageOut' ).on( 'click', '.takeOutButton',function(){
+    console.log( 'in takeOutButton on click' );
+  }); // end takeOutButton on click
 }); //end doc ready
 
 function displayGarage(){
@@ -34,7 +40,7 @@ function displayGarage(){
     outputString += garage[ i ].year + ' ';
     outputString += garage[ i ].make + ' ';
     outputString += garage[ i ].model;
-    outputString += '</li>';
+    outputString += ' <button class="takeOutButton">Take Out</button></li>';
     output.append( outputString );
   } //end for
 } // end displayGarage
